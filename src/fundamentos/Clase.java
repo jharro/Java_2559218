@@ -1,4 +1,4 @@
-package yupi;
+package fundamentos;
 
 public class Clase {
     public static void main(String[] args) {
