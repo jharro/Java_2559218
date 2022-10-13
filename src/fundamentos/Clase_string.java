@@ -8,5 +8,6 @@ public class Clase_string {
         System.out.println(mensaje2.endsWith("f"));
         String sinEspacios=mensaje1.trim();
         System.out.println(sinEspacios);
+        System.out.println("Un cambio");
     }
 }
