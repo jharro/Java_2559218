@@ -51,6 +51,9 @@ public class Monstruo {
         this.nroManos=nroManos;
 
     }
+    Monstruo(){
+
+    }
 //2. Métodos getter
 
     /*public String getNombre(){
@@ -121,6 +124,7 @@ public class Monstruo {
 
     }
     //Método toString
+
 
 
     @Override
