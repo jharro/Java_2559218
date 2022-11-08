@@ -92,8 +92,7 @@ public class Persona {
                 ", tu sexo es " + sexo +
                 ", tu peso es " + peso + " kg"+
                 " y tu altura es " + altura +" mt"+
-                " y segun tu imc tu estado es " + calcularIMC() +
-                '}';
+                " y segun tu imc tu estado es " + calcularIMC() +'\n';
     }
 
     public String esMayorEdad(){
@@ -105,6 +104,14 @@ public class Persona {
 
     String calcularIMC(){
         double imc = this.peso/Math.pow(this.altura,2);
-        return imc < 18.5 ? "Esta bajo de peso" : imc >= 18.5 && imc <= 24.9 ? "Estas melo" : imc >= 25 && imc <= 29.9 ? "Tas relleno" : imc >= 30 && imc <= 39.0 ? "Estas obeso" : "Ni el ejercicio te salva";
+        String mensaje="";
+       // return imc < 18.5 ? "Esta bajo de peso" : imc >= 18.5 && imc <= 24.9 ? "Estas melo" : imc >= 25 && imc <= 29.9 ? "Tas relleno" : imc >= 30 && imc <= 39.0 ? "Estas obeso" : "Ni el ejercicio te salva";
+        if(imc<18.5){
+            mensaje="Por debajo del peso";
+        }
+        else if(imc>=18.5 && imc <=24.9){
+            mensaje="Peso normal";
+        }
+        return mensaje;
     }
 }
