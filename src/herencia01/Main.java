@@ -1,8 +1,17 @@
 package herencia01;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        Estudiante est1 = new Estudiante("KalleXa","Calles 51 # 57 70","3108906501","kalexa@miknic.com",5);
+        Scanner sc= new Scanner(System.in);
+        Estudiante est1=new Estudiante();
+        System.out.println("Nombre del estudiante: ");
+    est1.setNombre(sc.nextLine());
+        System.out.println("Dirección: ");
+        est1.setDireccion(sc.nextLine());
+
+
         System.out.println(est1.toString());
     }
 }
